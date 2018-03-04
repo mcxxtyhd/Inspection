@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+body{
+    color:#3f3f3f;
+    margin:0 auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+	background:#ffffff;
+	scrollbar-face-color: #D7E0EB;
+	scrollbar-highlight-color: #E9EDF3;
+	scrollbar-shadow-color: #B4C7E4;
+	scrollbar-3dlight-color: #F3F7F8;
+	scrollbar-arrow-color:  #2B61B4;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #DEE3E7;
+
+}
+/*** 打印按钮 ***/
+#ptable{
+	border:1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+}
+#ptable td{
+	border:1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+}
+.ptbutton
+{
+    border-width: 0px; 
+    height:24px;
+	width:84px;
+	background-repeat: no-repeat;
+	background-image:url(../images/button.gif);
+	padding-left:4px;
+	cursor:hand;
+	color:#1b567b;
+	font-weight:bold;
+}
+/*** 数据区域 ***/
+#span{
+	margin-left:10px;
+	font-size:9pt;
+	font-weight:bold;
+}
+#ul{
+	list-style-type:decimal;
+}
+#ul li{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+	padding:2px 2px;
+	margin:0px 10px;
+}
+table{
+	border-collapse:collapse;
+	border:0px solid #000000; 
+	border-width: 1px 0px 0px 1px;
+	margin:0px;
+	font-size:8pt;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+}
+table td{
+	border:0px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	padding:3px 0px;
+}
+
+#toptable{
+	border:0px solid #000000;
+	border-width: 0px 1px 1px 0px;
+}
+#toptable td{
+	border:0px solid #000000;
+	border-width: 0px 0px 0px 0px;
+	padding: 3px 0px;
+}
+#centertable{
+	table-layout:fixed;
+	border:0px solid #000000;
+	border-width: 0px 0px 0px 0px;
+}
+#centertable td{
+	border:0px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	padding: 3px 3px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#foottable{
+	border:0px solid #000000;
+	border-width: 0px 0px 0px 0px;
+}
+#foottable td{
+	border:0px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	padding: 3px 3px;
+}
+/*** 字体 ***/
+.title1{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:16pt;
+	font-weight:bold;
+}
+.title2{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:14pt;
+	font-weight:bold;
+}
+.title3{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	font-weight:bold;
+}

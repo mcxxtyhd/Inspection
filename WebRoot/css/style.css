@@ -1,0 +1,129 @@
+@charset "utf-8";
+body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea, p {margin:0; padding:0; font-weight: normal;font-style: normal;font-size: 100%; font-family: inherit;}
+ol, ul ,li{list-style: none;}
+a { text-decoration:none;}
+img {border: 0; }
+body {
+	 background: #ffffff; font:12px/12px  Arial, Helvetica, sans-serif;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: verdana;
+	font-size: 12px;
+	color: #000;
+}
+
+#tableform tbody tr th {
+	height: 28px;
+	width: 25%; 
+	color : #474747;
+	font-size: 12px;
+	font-family: verdana;
+	font-weight: normal;
+	text-align: right;
+	padding-right: 8px;
+	background-color: #ccd9ec;
+	color: #474747;
+}
+
+#tableform tbody tr td {
+	height: 28px;
+	color: #474747;
+	font-size: 12px;
+	font-family: verdana;
+	text-align: left;
+	padding-left: 8px;
+	background-color: #ecf1f6;
+}
+
+#tableform tfoot tr td {
+	height: 28px;
+	color: #474747;
+	font-size: 12px;
+	font-family: verdana;
+	text-align: center;
+	padding-left: 8px;
+	background-color: #ecf1f6;
+}
+
+
+input { font-size:12px;}
+.input1 { width:60px; height:24px;}
+.btnss { width:60px; height:24px;}
+
+.STYLE1 {color: #2274C0;}
+.red { color:#FF0000;}
+
+.logo {
+	/*width:352px; height:60px; margin:0px auto;background: url('../images/main_01.gif') no-repeat;*/
+}
+
+.loginbg { width:970px; height:800px; background:#CCCCCC url(../images/loginbg.jpg); margin:0px auto;}
+.loginlogo { width:352px; height:44px; margin:0px auto; background:url(../images/loglogo.png);}
+.loginmain { width:588px; height:356px; margin:0px auto; background:url(../images/logbg_b.png);}
+.loginmain div { width:324px; height:28px; margin:12px auto; line-height:28px;  margin-left:235px;}
+.loginmain div .logzi { width:90px; float:left; font-weight:bold; color:#666666;}
+.loginmain div .fgt a { color:#4F86CD; font-weight:bold;}
+.loginmain .loging { width:231px; height:27px; background:url(../images/loging.jpg); border:0px; padding:0px 10px; }
+.loginmain .btndl { width:60px; height:26px; background:url(../images/btndl.jpg); border:0px; cursor:pointer;}
+
+.btnsms { width:88px; height:20px; border:0px; background:#508BC3; font-size:12px; cursor:pointer; color: #ffffff;}
+.btnbg { width:80px; height:24px; border:0px; background:url(../images/btnic.jpg); font-size:12px; cursor:pointer;}
+.btnsm { width:60px; height:20px; border:0px; background:#508BC3; font-size:12px; cursor:pointer; color: #ffffff;}
+
+
+#top { width:auto; height:80px; background: url(../images/topbg.jpg) repeat-x; position:relative;}
+#top .logo { width:400px; height:80px; background:url(../images/logo.jpg);}
+#top .topmain { width:150px; height:20px; top:10px; right:10px; position:absolute; color:#FFFFFF; }
+#top .topmain span { padding:0px 10px;}
+#top .topmain a { color:#FFFFFF;}
+#top .topmain a:hover { color:#CCCCCC;}
+#tiao { width:auto; height:27px; background:url(../images/tiao.jpg) repeat-x; padding-left:10px;}
+#tiao .time { height:27px; background:url(../images/time.png) no-repeat;color:#FFFFFF; padding-left:30px; line-height:27px;}
+
+#content {width:98%;height:auto;min-height:530px;overflow: auto;}
+#content .leftmain { width:182px; height:530px; background:url(../images/leftmain.png);  float:left;}
+#content .leftmain h1 { height:29px; line-height:29px; text-align:center; padding-right:10px; display:block;}
+#content .leftmain .uilie { width:142px; height:472px; display:block; padding-left:20px;}
+#content .leftmain li { margin:20px 10px; color:#FFFFFF; padding-left:20px; background: url(../images/lico.jpg) no-repeat;}
+#content .leftmain li a { color:#FFFFFF;}
+#content .leftmain li a:hover { color: #CCCCCC;}
+
+#content .rightmain { width:100%; height:auto; min-height:530px; padding-left:8px; float:left; overflow:auto;}
+#content .rightmain .tait{ height:24px; padding-top:6px; line-height:22px;}
+#content .rightmain .tait input { margin:0px 4px;}
+#content .rightmain .tabcont { margin-top:10px; background:#CCCCCC;}
+#content .rightmain .appku { margin:20px 10px;}
+#content .rightmain .appku .zitai { width:120px; float:left; line-height:18px;}
+#content .rightmain .map { width:808px; height:390px; margin-top:2px; border:1px solid #CCCCCC;}
+#content .rightmain .tab { width:190px; height:30px; margin-bottom:1px;}
+#content .rightmain .tab li { width:90px; height:30px; float:left; text-align:center; line-height:30px; margin-right:2px; cursor:pointer; color:#006699;}
+#content .rightmain .tab li a { color: #006699;}
+#content .rightmain .tab .lia { background:url(../images/taba.jpg);}
+#content .rightmain .tab .lib {background:url(../images/tabb.jpg);}
+
+#content .rightmain .xuanku { width:770px; height:220px; background:#FFFFFF; border:1px solid #CCCCCC;}
+#content .rightmain .xuanku li { width:220px; height:24px; margin:14px 25px; float:left; display:block;}
+
+#content .rightmain .rimap { width:820px; height:510px; border:1px solid #CCCCCC; margin-bottom:10px;}
+#content .rightmain .tiao {height:22px; line-height:22px; color:#3F9AC7; margin-bottom:10px;}
+#content .rightmain .fenye { height:22px; line-height:22px;color:#3F9AC7; margin-top:2px;}
+#content .rightmain .fenye a { color:#3F9AC7;}
+
+#content .contmain { width:1020px; height:auto; margin:0px auto; }
+#content .contmain .tait { height:24px; padding-top:6px; line-height:22px;}
+#content .contmain .tait input { margin:0px 4px;}
+#content .contmain .tabcont { margin-top:10px; background:#CCCCCC;}
+#content .contmain .forbox { width:500px; height:342px; float:left; margin:4px; border:1px solid #CCCCCC;}
+#content .contmain .forbox .fora { width:310px; height:160px; margin:5px 2px; float:left;}
+#content .contmain .forbox .fora img { width:310px; height:160px;}
+#content .contmain .forbox .forb { width:141px; height:77px; margin:2px 5px; float:left;}
+#content .contmain .forbox .forku { width:490px; height:120px; clear:both; overflow-x:auto; float:footer ;}
+#content .contmain .forbox .forku .forb { width:141px; height:77px; margin:8px 8px; float:left;}
+
+
+
+
+#bottom { width:auto; height:38px; background:url(../images/bottom.jpg) repeat-x; clear: both;}
+#bottom p { text-align:center; color:#6C6C6C;line-height:38px;}

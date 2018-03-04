@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+body{
+    color:#3f3f3f;
+    margin:0 auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+	background:#ffffff;
+	scrollbar-face-color: #D7E0EB;
+	scrollbar-highlight-color: #E9EDF3;
+	scrollbar-shadow-color: #B4C7E4;
+	scrollbar-3dlight-color: #F3F7F8;
+	scrollbar-arrow-color:  #2B61B4;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #DEE3E7;
+
+}
+/*** 字体 ***/
+.title1{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:20pt;
+	font-weight:bold;
+}
+.title2{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:16pt;
+	font-weight:bold;
+}
+.title3{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	font-weight:bold;
+}
+.title4{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+.xl39 { FONT-SIZE: 20pt; TEXT-ALIGN: center; mso-style-parent: style0
+}
+.xl30 {	font-size:10pt;
+}
+
+#top_table{
+	border:1px solid #ffffff;
+	border-width: 0px 0px 0px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:9pt;
+}
+#top_table td{
+	border:1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  
+#top_style_table{
+	border:0px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#top_style_table td{
+	border:1px solid #000000;
+	border-width: 1px 0px 0px 1px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#mast_table{
+	border:1px solid #000000;
+	border-width: 1px 0px 0px 1px;
+}
+#mast_table th{
+	border:1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	font-weight:normal;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#mast_table td{
+	border:1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#foot_table{
+	font-size:8pt;
+	border:1px solid #ffffff;
+}
+#foot_table td{
+	border:1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+/*** 打印按钮 ***/
+#ptable{
+	border:1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+}
+#ptable td{
+	border:1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+}
+.ptbutton
+{
+    border-width: 0px; 
+    height:24px;
+	width:84px;
+	background-repeat: no-repeat;
+	background-image:url(../images/button.gif);
+	padding-left:4px;
+	cursor:hand;
+	color:#1b567b;
+	font-weight:bold;
+}
+/*** 数据区域 ***/
+#dtable{
+	border-collapse:collapse;
+	border:1px solid #000000;
+	border-width: 1px 0px 0px 1px;
+}
+#dtable td{
+	border:1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	padding: 4px 3px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#intable{
+	border-collapse:collapse;
+	border:1px solid #000000;
+	border-width: 0px 1px 1px 0px;	
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#intable td{
+	border:1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	padding: 3px 3px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}
+#intable_foot{
+	border-collapse:collapse;
+	border:1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:8pt;
+}

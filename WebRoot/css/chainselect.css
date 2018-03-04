@@ -1,0 +1,23 @@
+.loading {
+	width: 400px;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	margin: 0 auto;
+	visibility: hidden; 
+}
+.loading p {
+	text-align: center;
+}
+p {
+	margin: 0;
+}
+.group {
+	/*width: 500px;*/
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+
+.cartype{
+	display: none;
+}
+

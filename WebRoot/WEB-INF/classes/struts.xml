@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <!-- 开发模式配置 -->
+   
+     <!-- 是否启用开发模式 -->
+	<constant name="struts.devMode" value="false" />
+	<!-- struts配置文件改动后，是否重新加载 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+    <!-- convention类文件改动后，是否重新加载 -->
+	<constant name="struts.convention.classes.reload" value="true" />
+	<!-- 每次HTTP请求系统都重新加载资源文件，有助于开发 -->
+	<constant name="struts.i18n.reload" value="true" />
+	
+	<!-- 所有匹配*.action的请求都由struts2处理 -->
+	<constant name="struts.action.extension" value="action" />
+	 <!--结果资源所在路径  
+	<constant name="struts.convention.result.path" value="/WEB-INF/jsp"/>-->
+	
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	 <!-- 扫描包的路径 -->
+	<constant name="struts.convention.action.packages" value="com.inspect.action"/>
+	<constant name="struts.convention.package.locators.disable" value="true"/>
+	<constant name="struts.convention.default.parent.package" value="default"/>
+	<constant name="struts.custom.i18n.resources" value="i18n/globalMessages" />
+	
+	<package name="default" extends="struts-default,json-default">
+	
+	 <interceptors>
+	   <!-- 字符集拦截器 -->
+	   <interceptor name="encodingInterceptor" class="com.inspect.interceptor.EncodingInterceptor"></interceptor>
+	   <interceptor-stack name="encodingStack">
+	    <interceptor-ref name="defaultStack"></interceptor-ref>
+	    <interceptor-ref name="encodingInterceptor"></interceptor-ref>
+	   </interceptor-stack>
+	   
+	    <!-- Session拦截器 -->
+	   <interceptor name="sessionInterceptor" class="com.inspect.interceptor.SessionInterceptor"></interceptor>
+	   <interceptor-stack name="sessionStack">
+	    <interceptor-ref name="encodingStack"></interceptor-ref>
+	    <interceptor-ref name="sessionInterceptor">
+	      <param name="excludeMethods">checkuser,login,logout,inter*</param>
+	    </interceptor-ref>
+	   </interceptor-stack> 
+	   
+	    <!-- 日志拦截器 -->
+	   <interceptor name="logInterceptor" class="com.inspect.interceptor.LogInterceptor"></interceptor>
+	   <interceptor-stack name="myDefaultStack">
+	    <interceptor-ref name="sessionStack"></interceptor-ref>
+	    <interceptor-ref name="logInterceptor"></interceptor-ref>
+	   </interceptor-stack>
+	   
+	 </interceptors>
+	 
+	 <default-interceptor-ref name="myDefaultStack" />
+	
+     <global-results>
+		 <result name="jsonResult"  type="json"></result>
+		 <result name="noSession">/common/noSession.jsp</result>
+		 <result name="strutsException">/common/strutsException.jsp</result>
+	 </global-results>
+		
+	<global-exception-mappings>
+		<exception-mapping result="strutsException" exception="java.lang.Exception"></exception-mapping>
+	</global-exception-mappings>
+		
+	</package>
+	
+	
+	<!-- 图片上传添加 	 --> 
+    <!-- <constant name="struts.action.extension" value="do"/> -->
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- <constant name="struts.devMode" value="true"/> -->
+    <constant name="struts.ui.theme" value="simple"/>
+    <constant name="struts.objectFactory" value="spring" />
+   <!--  <constant name="struts.i18n.encoding" value="UTF-8"/> -->
+    <constant name="struts.multipart.maxSize" value="22097152"/>
+    <constant name="struts.multipart.saveDir " value="d:/tmp"/>
+    <package name="upload" namespace="/upload" extends="struts-default">
+        <action name="execute" class="com.inspect.action.webservice.UploadAction">
+            <param name="savePath">/image</param>
+            <result name="success">/WEB-INF/page/message.jsp</result>
+        </action>
+    </package> 
+    
+    
+   <!--  <constant name="struts.multipart.parser" value=""/>  -->
+
+       <package name="struts2"  namespace="/UploadAction2" extends="struts-default">  
+         <action name="UploadAction2" class="com.inspect.action.webservice.UploadAction2">  
+             <result name="success1"> /formsList.jsp</result>  
+         </action>  
+    </package>  
+
+    	<package name="struts21" extends="struts-default">
+		<action name="FileDownload" class="com.inspect.action.basis.FileDownload">
+			<!-- result的Type必须为stream -->
+			<result name="success" type="stream">
+				<!-- 下载文件类型 -->
+				<param name="contentType">text/plain</param>
+				<!-- 下载对话框所弹出的文件名 -->
+				<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+				<!-- 下载的InputStream流，Struts2自己动对应Action中的getDownloadFile方法，该方法必须返回InputStream类型 -->
+				<param name="inputName">downloadFile</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+
+	</package>
+    
+    
+
+    
+    
+</struts>
